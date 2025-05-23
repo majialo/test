@@ -124,10 +124,30 @@ body.dark-mode .articles li {
 }
 
 /* ==== 原版权信息栏样式 ==== */
+/* —— 恢复黑框效果 —— */
+.issue-container {
+  display: flex;
+  gap: 2rem;
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  max-width: 1200px;
+  /* 这里恢复负 margin，让黑底部分往上顶到 header 下方 */
+  margin: -3rem auto 2rem;  
+  border-radius: 8px;
+  /* 加个阴影更立体 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* —— 确保 footer 拉满并居中 —— */
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  /* 让它独占一行，避免被 issue-container 影响 */
+  clear: both;
+  width: 100%;
 }
