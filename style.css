@@ -151,3 +151,9 @@ footer {
   clear: both;
   width: 100%;
 }
+
+/* 让 header 保持在黑框之上 */
+.site-header {
+  position: relative;
+  z-index: 2;
+}
