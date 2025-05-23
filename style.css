@@ -37,7 +37,8 @@ body {
 .widgets {
   display: flex;
   gap: 1rem;
-  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 .widgets button {
   padding: 0.4rem 0.8rem;
@@ -50,15 +51,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  border: 1px dashed #00ccff;
-  padding: 0.6rem 0.8rem;
+  border: 1px dashed #cc00ff;
+  padding: 0.5rem 0.8rem;
   border-radius: 4px;
-  background: rgba(255,255,255,0.8);
 }
 #random-fact p {
-  margin-bottom: 0.4rem;
+  margin: 0 0 0.4rem 0;
   font-size: 0.9rem;
-  max-width: 180px;
+  max-width: 200px;
   text-align: right;
 }
 
