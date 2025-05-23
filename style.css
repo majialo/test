@@ -152,8 +152,10 @@ footer {
   width: 100%;
 }
 
-/* 上移期刊选择栏 */
+/* 向上提期刊选择栏，并置于黑框之上 */
 .header-nav {
   position: relative;
-  top: -20px; /* 往上提 10px，按需增减 */
+  top: -20px !important;   /* 往上提 20px，根据实际需求微调 */
+  z-index: 2 !important;    /* 确保它盖过黑底区 */
 }
+
