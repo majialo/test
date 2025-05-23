@@ -152,8 +152,8 @@ footer {
   width: 100%;
 }
 
-/* 让 header 保持在黑框之上 */
-.site-header {
+/* 上移期刊选择栏 */
+.header-nav {
   position: relative;
-  z-index: 2;
+  top: -20px; /* 往上提 10px，按需增减 */
 }
